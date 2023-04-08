@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'expensetracker1.wsgi.application'
+WSGI_APPLICATION = 'expensetracker.wsgi.application'
 
 
 # Database
