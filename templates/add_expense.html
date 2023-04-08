@@ -7,7 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    Add an expense
+    <h1>Add an expense</h1>
+    <form  method= "POST" action = "">
+        {% csrf_token %}
+        <label for = "expense_name">Name of expense</label>
+        <input type="text" id = "expense_name" name = "expense_name">
+
+        <button type="submit">Submit expense</button>
+
+    </form>
     
 </body>
 </html>
