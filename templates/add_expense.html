@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>Add an expense</h1>
+   
     <form  method= "POST" action = "">
         {% csrf_token %}
-        <label for = "expense_name">Name of expense</label>
-        <input type="text" id = "expense_name" name = "expense_name">
+        {{form}}
 
         <button type="submit">Submit expense</button>
 

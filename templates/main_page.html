@@ -9,8 +9,17 @@
 <body>
     Main page
 
-    {{Expenses}}
+    <table>
+        {% for expense in expenses %}
+        <tr>
+            <td>{{ expense.name }}</td>
+        </tr>
+        {% endfor %}
 
+   </table>
+
+
+  
     <a href="add/">Add a new expense</a>
 </body>
 </html>
