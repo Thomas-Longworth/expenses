@@ -8,6 +8,15 @@
 </head>
 <body>
     Update an expense
+
+    <form  method= "POST" >
+        {% csrf_token %}
+        {{form}}
+
+        <button type="submit">Update Item</button>
+
+    </form>
+    
     
 </body>
 </html>
