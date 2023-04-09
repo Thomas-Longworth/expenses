@@ -36,6 +36,7 @@ def update(request, expense_id):
     context = {
         'form': form
     }
+    
     return render(request, 'update_expense.html', context)
     
 
